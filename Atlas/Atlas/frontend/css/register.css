@@ -1,0 +1,56 @@
+/* 전체 페이지 배경 */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* 회원가입 박스 감싸는 컨테이너 */
+.register-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* 제목 스타일 */
+.register-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 입력 필드 정렬 및 디자인 */
+.register-container div, .register-container table {
+    margin-bottom: 12px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* 가입하기 버튼 */
+#joinBtn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#joinBtn:hover {
+    background-color: #45a049;
+}

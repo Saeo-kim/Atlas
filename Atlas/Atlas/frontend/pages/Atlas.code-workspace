@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../Aira"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Atlas"
+	}
+}

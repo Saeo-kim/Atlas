@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Atlas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <!-- 검색창 -->
+        <div class="search-box">
+            <input type="text" placeholder="상품 검색...">
+            <button>검색</button>
+        </div>
+
+        <!-- 로고 -->
+        <div class="logo"><h2>Project Atlas</h2></div>
+
+        <!-- 카테고리 -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Outer</a></li>
+                <li><a href="#">Top</a></li>
+                <li><a href="#">Bottom</a></li>
+                <li><a href="#">Acc</a></li>
+            </ul>
+        </nav>
+
+        <!-- 오른쪽 메뉴 아이콘 -->
+        <div class="menu-icon">☰</div>
+    </header>   
+
+    <!-- 상품 영역 시작 -->
+    <section class="content">
+        <h2>Today's Special</h2>
+        <div class="product">Product 1</div>
+    </section>
+
+        <div class="side-menu" id="sideMenu">
+            <a href="../Profile/index.html">My Profile</a>
+            <a href="login.html">Login</a>
+            <a href="#">Cart (0)</a>
+        </div>
+    </nav>
+
+
+    <header class="hero">
+        <h1>Today's Specia</h1>
+        <p>Discover our curated selection for you.</p>
+    </header>
+
+    <main class="product-grid">
+        <div class="product-card">
+            <img src="https://placehold.co/300x200/cbd5e1/white?text=Product+1" alt="Product">
+            <h3>상품 이름 1</h3>
+            <p>₩ 25,000</p>
+            <button onclick="alert('장바구니에 담겼습니다!')">구매하기</button>
+        </div>
+        <div class="product-card">
+            <img src="https://placehold.co/300x200/cbd5e1/white?text=Product+2" alt="Product">
+            <h3>상품 이름 2</h3>
+            <p>₩ 35,000</p>
+            <button onclick="alert('장바구니에 담겼습니다!')">구매하기</button>
+        </div>
+        <div class="product-card">
+            <img src="https://placehold.co/300x200/cbd5e1/white?text=Product+3" alt="Product">
+            <h3>상품 이름 3</h3>
+            <p>₩ 45,000</p>
+            <button onclick="alert('장바구니에 담겼습니다!')">구매하기</button>
+        </div>
+    </main>
+
+    <script>
+        console.log("쇼핑몰 페이지가 로드되었습니다.");
+    </script>
+    <script src="../js/main.js"></script>
+    
+</body>
+</html>
