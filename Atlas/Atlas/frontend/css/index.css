@@ -1,0 +1,136 @@
+        /* index.css 파일에 아래 내용 추가 */
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        /* 전체 바 배치 */
+        .navbar {
+            display: flex; /* 핵심: 내부 요소들을 가로로 나열함 */
+            flex-direction: column; /* 세로로 쌓기 */
+            align-items: center; /* 가운데 정렬 */
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* 카테고리 가로 정렬 & 검은색 */
+        .nav-links {
+            display: flex;
+            list-style: none; /* 점 없애기 */
+            gap: 30px; /* 메뉴 사이 간격 */
+            padding: 0;
+        }
+
+        /* 링크 스타일 정리 */
+        .nav-links a {
+            text-decoration: none; /* 밑줄 제거 */
+            color: black;
+            font-weight: bold;
+        }
+
+        .search-box input { margin-bottom: 15px; }
+
+        /* 메뉴 아이콘 오른쪽 벽면 고정 */
+        .menu-icon {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* 2. 오른쪽 메뉴 그룹 스타일 */
+        .user-menu {
+            display: flex; /* 가로로 나란히 */
+            gap: 15px; /* 항목 사이 간격 */
+        }
+
+        /* 3. 링크 스타일 */
+        .user-menu a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* 2. CSS로 숨기기 */
+        .side-menu {
+            display: none; /* 평소엔 안 보임 */
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background: white;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        }
+
+       :root {
+            --primary-color: #c0bfd6;
+            --secondary-color: #64748b;
+            --bg-color: #f8fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--bg-color);
+            color: #616b7a;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(197, 168, 168, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #c3c3c5, #d0d0d3);
+            color: white;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            background: #e2e8f0;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+   

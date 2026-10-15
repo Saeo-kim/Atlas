@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+
+  <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+<h2>register</h2>
+
+<form action="register" method="post">
+
+  <!-- 아이디 -->
+  <div>
+    아이디 <input type="text" name="userid" required>
+  </div>
+
+  <!-- password -->
+  <div>
+    password <input type="password" name="password" required>
+  </div>
+
+  <!-- passwordCheck -->
+  <div>
+    passwordCheck<input type="password" name="passwordCheck" required>
+  </div>
+
+  <!-- name -->
+  <div>
+    name <input type="text" name="username" required>
+  </div>
+
+  <!-- 휴대전화 -->
+  <div>
+    휴대전화
+    <input type="text" value="010" size="3">
+    -
+    <input type="text" size="4">
+    -
+    <input type="text" size="4">
+  </div>
+
+  <!-- 이메일 -->
+  <div>
+    이메일 <input type="email" name="email" required>
+  </div>
+
+  <!-- 성별 -->
+  <div>
+    성별
+    <label><input type="radio" name="gender" value="male"> 남자</label>
+    <label><input type="radio" name="gender" value="female"> 여자</label>
+  </div>
+
+  <!-- 약관 -->
+  <hr>
+
+  <div>
+    <label>
+      <input type="checkbox" required>
+      [필수] 이용약관 및 개인정보 수집 동의
+    </label>
+  </div>
+
+  <div>
+    <label>
+      <input type="checkbox" required>
+      [필수] 개인정보 수집 및 이용 동의
+    </label>
+  </div>
+
+  <div>
+    <label>
+      <input type="checkbox">
+      [선택] 쇼핑정보 수신 동의
+    </label>
+  </div>
+
+  <!-- 가입 버튼 -->
+  <div>
+    <button type="submit">가입하기</button>
+  </div>
+
+</form>
+
+<script src="../js/register.js"></script>
+
+</body>
+</html>
